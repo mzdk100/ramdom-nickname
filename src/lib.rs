@@ -46,7 +46,7 @@ impl Display for GenError {
 /// # 示例
 ///
 /// ```
-/// use random_nickname::{ random, Gender };
+/// use random_nickname2::{ random, Gender };
 ///
 /// match random::<4>(Gender::Female) {
 ///     Ok(name) => println!("生成的名字是: {}", name),
