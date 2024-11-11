@@ -100,6 +100,7 @@
       <workItem from="1724859839959" duration="28000" />
       <workItem from="1725741199649" duration="1657000" />
       <workItem from="1728149215584" duration="410000" />
+      <workItem from="1731293880093" duration="1988000" />
     </task>
     <task id="LOCAL-00001" summary="0.1.0版本。">
       <option name="closed" value="true" />
@@ -154,6 +155,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="0.1.0版本。" />
