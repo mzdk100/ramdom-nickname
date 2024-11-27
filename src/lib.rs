@@ -1,13 +1,13 @@
 mod names;
 
-use rand::{rngs::ThreadRng, thread_rng, Rng};
+use rand::{rngs::ThreadRng, rng, Rng};
 use std::{
     cell::RefCell,
     fmt::{Display, Formatter},
     sync::LazyLock,
 };
 
-const THREAD_RNG: LazyLock<RefCell<ThreadRng>> = LazyLock::new(|| RefCell::new(thread_rng()));
+const THREAD_RNG: LazyLock<RefCell<ThreadRng>> = LazyLock::new(|| RefCell::new(rng()));
 
 /// 性别枚举
 #[derive(Copy, Clone, Debug)]
@@ -74,7 +74,7 @@ pub fn random<const LEN: usize>(gender: Gender) -> Result<&'static str, GenError
     if data.is_empty() {
         return Err(GenError(format!("No result for {:?}: len {}", gender, LEN)));
     }
-    let index = THREAD_RNG.borrow_mut().gen_range(0..data.len());
+    let index = THREAD_RNG.borrow_mut().random_range(0..data.len());
     Ok(data[index])
 }
 
