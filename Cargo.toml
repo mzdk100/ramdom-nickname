@@ -5,7 +5,7 @@ description = "用于Rust的随机用户昵称生成器"
 keywords = ["name", "user", "random", "gen", "nickname"]
 license = "Apache-2.0"
 readme = "README.md"
-version = "0.1.5"
+version = "0.1.6"
 edition = "2021"
 repository = "https://github.com/mzdk100/ramdom-nickname.git"
 
